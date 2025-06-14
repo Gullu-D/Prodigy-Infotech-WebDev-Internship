@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 15px 30px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s;
+  z-index: 1000;
+}
+
+.navbar.scrolled {
+  background-color: #333;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ffcc00;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+.btn {
+  padding: 10px 25px;
+  background-color: #fff;
+  color: #333;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3); /* button shadow */
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #ffcc00;
+  color: black;
+}
